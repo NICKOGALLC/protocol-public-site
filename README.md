@@ -58,9 +58,14 @@ renders were inspected. The six publication files contain no application
 source, health records, credentials, or internal deployment addresses.
 GitHub reported a successful Pages build of `bd6ea0f`. The three public page/CSS
 responses returned HTTP 200 and matched the reviewed local files byte for byte.
-Google Console acceptance remains unverified until the owner enters these URLs
-and obtains an actual **In production** status. No tracker service restart or
-data migration is needed for these pages.
+The owner subsequently supplied a Console screenshot showing **In production**
+and **Back to testing** after entering the site information. The separate
+verification banner remains; personal-use verification exceptions do not imply
+that Google has verified the application. The existing private connector was
+then reauthorized; forced renewal, a bounded read, and verification of the same
+three read-only permissions passed. The saved history import resumed with
+automatic collection enabled. This verifies current access, not indefinite
+token validity. No tracker service restart or data migration was needed.
 
 Before publication, inspect every staged file and the entire history for private
 content. Validate local links, semantic HTML, keyboard navigation, narrow-screen
