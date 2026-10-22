@@ -49,6 +49,17 @@ that behavior changes; do not promise deletion controls or retention behavior
 that the application does not implement. The effective date is in `privacy.html`.
 Public repository issues are for non-sensitive contact only.
 
+## Initial verification
+
+On 2026-10-21, the homepage, privacy page, and stylesheet returned HTTP 200
+from an isolated loopback preview. HTML structure, unique IDs, and all 14 local
+links/anchors passed checks. Chromium desktop (1440 px) and mobile (390 px)
+renders were inspected. The six publication files contain no application
+source, health records, credentials, or internal deployment addresses.
+This verifies the local site; GitHub publication and Google Console acceptance
+must be verified separately. No tracker service restart or data migration is
+needed for these pages.
+
 Before publication, inspect every staged file and the entire history for private
 content. Validate local links, semantic HTML, keyboard navigation, narrow-screen
 layout, and HTTP responses. Publishing or updating GitHub requires the owner's
