@@ -14,15 +14,15 @@ From this directory, run `python3 -m http.server 8081 --bind 127.0.0.1` and open
 `http://127.0.0.1:8081/`. Stop that exact preview process when finished.
 There are no dependencies, JavaScript, build step, remote fonts, or analytics.
 
-## Intended hosting
+## Hosting
 
 GitHub Free, in the separate public repository `NICKOGALLC/protocol-public-site`.
-Use GitHub Pages with the published branch and `/` as its source. Retain
+GitHub Pages is enabled with `main` and `/` as its source, with HTTPS enforced. Retain
 `.nojekyll` so the pages are served as plain static files. A paid plan or custom
 domain is unnecessary for hosting. This does not guarantee Google's acceptance
 of the OAuth branding URLs; that must be checked in the actual Cloud project.
 
-Expected addresses, once published and verified:
+Published addresses (verified over HTTPS on 2026-10-21):
 
 - Homepage: `https://nickogallc.github.io/protocol-public-site/`
 - Privacy: `https://nickogallc.github.io/protocol-public-site/privacy.html`
@@ -56,9 +56,11 @@ from an isolated loopback preview. HTML structure, unique IDs, and all 14 local
 links/anchors passed checks. Chromium desktop (1440 px) and mobile (390 px)
 renders were inspected. The six publication files contain no application
 source, health records, credentials, or internal deployment addresses.
-This verifies the local site; GitHub publication and Google Console acceptance
-must be verified separately. No tracker service restart or data migration is
-needed for these pages.
+GitHub reported a successful Pages build of `bd6ea0f`. The three public page/CSS
+responses returned HTTP 200 and matched the reviewed local files byte for byte.
+Google Console acceptance remains unverified until the owner enters these URLs
+and obtains an actual **In production** status. No tracker service restart or
+data migration is needed for these pages.
 
 Before publication, inspect every staged file and the entire history for private
 content. Validate local links, semantic HTML, keyboard navigation, narrow-screen
